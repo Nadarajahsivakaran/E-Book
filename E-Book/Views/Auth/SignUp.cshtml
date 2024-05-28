@@ -1,0 +1,21 @@
+﻿@model RegisterDTO
+
+<h1>Register</h1>
+<form method="post" action="Register">
+    <div class="form-group mb-3">
+        <label>First Name</label>
+        <input asp-for="FirstName" type="text" class="form-control" placeholder="Enter First Name">
+
+    </div>
+    <div class="form-group mb-3">
+        <label>Email address</label>
+        <input asp-for="Email" type="email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Password</label>
+        <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
